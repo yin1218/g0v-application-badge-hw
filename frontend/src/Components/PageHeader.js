@@ -1,8 +1,9 @@
-import styled from 'styled-components'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Icon } from '@iconify/react';
+
 
 
 const PageHeader = () => {
@@ -19,14 +20,18 @@ const PageHeader = () => {
           >
             <Nav.Link href="#action1">Home</Nav.Link>
             <NavDropdown title="Login / Sign Up" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Something else here
-              </NavDropdown.Item>
+                <NavDropdown.Item href="https://google.com" target="_blank">
+                    <Icon icon="logos:slack-icon" width="24" />
+                    {' '}Slack
+                </NavDropdown.Item>
+                <NavDropdown.Item href="https://slack.com" target="_blank">
+                    <Icon icon="flat-color-icons:google" width="24" />
+                    {' '}Google
+                </NavDropdown.Item>
+                <NavDropdown.Item href="https://github.com" target="_blank">
+                    <Icon icon="akar-icons:github-fill" width="25" />
+                    {' '}GitHub
+                </NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

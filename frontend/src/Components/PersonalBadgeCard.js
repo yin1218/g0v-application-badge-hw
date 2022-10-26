@@ -1,10 +1,7 @@
 import styled from 'styled-components'
 import Card from 'react-bootstrap/Card';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Badge from 'react-bootstrap/Badge';
 import { Icon } from '@iconify/react';
-import Button from 'react-bootstrap/Button';
 
 const MoifiedCard = styled(Card)`
     margin: 1%;
@@ -32,7 +29,7 @@ const PersonalBadgeCard = ({brief, time, title, url, rank, total}) => {
                 <Card.Text>
                     {brief}
                 </Card.Text>
-                <Card.Link href={url}>See more</Card.Link>
+                <Card.Link href={url} target="_blank">See more</Card.Link>
             </Card.Body>
             </MoifiedCard>
         </>
