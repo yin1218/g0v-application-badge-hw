@@ -32,7 +32,7 @@ const PersonalInfo = ({userName, userId, userTag, userPhoto}) => {
         if(userTag){
             setTags(userTag.trim().split(/\s+/));
         }
-    }, [])
+    }, [userTag])
 
 
 
